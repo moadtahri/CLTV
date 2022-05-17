@@ -35,7 +35,7 @@ def model_fit_survival(params, n, active):
                             'model': _loglikelihood(params, n, active, return_s=True)})
     return df_plot.hvplot('t',['observed', 'model'], title = 'Survival rate')
     # using init params (1,1)
-print(model_fit_survival(params, n, active))
+model_fit_survival(params, n, active)
 # using optimized params res.x
 model_fit_survival(res.x, n, active)
 alpha, beta = res.x
@@ -43,4 +43,8 @@ d = 0.1
 net_cf = 100
 clv = e_clv(alpha, beta, d, net_cf)
 print("clv is ", clv)
+import holoviews as hv
+from bokeh.plotting import show
 
+show(hv.render(model_fit_survival(res.x, n, active)))
+#hvplot.show(model_fit_survival(res.x, n, active))
