@@ -1,0 +1,2 @@
+# In terminal, run: conda env create -f environment.yml
+# To update, run: conda env update -f environment.yml
