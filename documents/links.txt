@@ -1,4 +1,0 @@
-http://www.brucehardie.com/notes/
-http://www.brucehardie.com/notes/032/
-https://cloud.google.com/architecture/clv-prediction-with-offline-training-intro
-https://www.clv-calculator.com/videos-clv/
